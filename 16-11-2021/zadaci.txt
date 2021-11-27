@@ -1,0 +1,54 @@
+1. napravite set sa nekim podacima na dva nacina.
+
+2. napisite program koji iterira kroz set
+
+3. napisite program koji dodaje clanove / elemente u set
+
+4. napisite program koji uklanja elemente iz seta.
+
+5. napisite program koji uklanja element iz seta samo ako je on prisutan.
+
+6. iz seta {1, 2, 3, 4, 5} izbacite i ispisite posljednji element.
+
+7. zadani su setovi {"a", "b", "c"} i {1, 2, 3}. zdruzite dva seta.
+
+8. zadani su setovi a={"a", "b", "c"} i b={1, 2, 3}. ubacite set a u set b.
+
+9. zadani su setovi {"jabuka", "kruska", "orah"} i {"jabuka", "tresnja", "kruska"}. napravite set koji sadrzi samo elemente koji se nalaze u oba seta.
+
+10. https://www.w3schools.com/python/python_sets_join.asp
+intersection
+
+11. zadani su skupovi:
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a", "b", "c"}
+ispitaj da li je jedan skup podskup drugome, odnosno nadskup drugome.
+
+
+12. zadani su skupovi:
+A = {1, 5, 1, 5, 4, 7, 8, 2, 3, 2}
+B = {1, 2, 3, 6}
+
+ispisite sljedece: 
+    a) uniju 
+    b) presjek
+    c) razliku
+    d) komplement presjeka
+    
+13. napisi program koji ce uneseni string pretvoriti u skup i ispisati ga.
+
+14. napisi program koji ce ispisati set u obliku stringa.
+
+15. napisi program koji ce preko skupova provjeriti je li uneseni string binaran ili nije. primjer binarnog stringa: "0110101", "ababbbabab", "566556" itd.
+    
+16. napisi funkciju koja prima dva skupa razlicitih duljina A i B. ako je neki od ta dva skupa podskup drugome, ispisi razliku tih dvaju skupova (od nadskupa oduzmi podskup); ako nisu, napravi uniju i presjek skupova.
+
+17. Napisi prog koji ce provjeriti predani tip te ovisno o tipu napraviti sljedece: ako je unesen set, napravit ce listu. ako je unesena lista, napravit ce tuple, a ako je unesen tuple, napravit ce set.
+
+18. Nadogradi prethodni zadatak tako da generira dictionary od unesenih elemenata. Pridruzite 0 kao defaultnu vrijednost svim kljucevima
+
+19. vas omiljeni carobni aparat za kavu je podivljao. aparat treba ispitivati korisnika za kavu sve dok on ne unese "Q" ili 0. aparat prihvaca samo kovanice od 2kn ili 5kn. kada korisnik ubaci kovanicu od 5kn, aparat nausmicno izbacuje dvije kave. kada korisnik ubaci kovanicu od 2kn, aparat nasumicno izbaci jednu kavu. ako aparat sakupi 20kn, on se magicno napuni za 3 kave. neka set sljedeceg oblika simbolizira pocetnu kolicinu kave u aparatu: set_kava = {1, 2, 3, 4, 5, 6}. set se treba umanjivati sa svakom isporucenom kavom.
+
+20. nadogradite prethodni zadatak na nacin da ubacite u aparat i opciju za dodavanje mlijeka u kavu. kada korisnik ubaci kovanicu, aparat ga treba pitati zeli li kavu sa mlijekom ili bez. ukoliko korisnik odabere kavu sa mlijekom, ona se nasumicno uklanja iz sljedeceg seta: set_mlijeko = {1, 2, 3}. ukoliko korisnik zatrazi kavu sa mlijekom, a u aparatu ga vise nema, treba ispisati odgovarajucu poruku i po vasoj zelji nastaviti izvodjenje (npr. pitati korisnika za novu kavu ili mu isporuciti kavu bez mlijeka). u svim slucajevima treba se ispisati kakva je kava isporucena, koliko novca je ubaceno te koliki je iznos novca u aparatu nakon isporuke kave.
+
+

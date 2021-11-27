@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="Paint.js"></script>
+  <script src="../NN/Array.js"></script>
+  <script src="../NN/MNIST.js"></script>
+  <script src="../NN/NN.js"></script>
+  <title>Recognize digit</title>
+</head>
+
+<body>
+  <label>Predictions: </label>
+  <canvas id="sampleNumbers" width=400" height="200" style="border: 1px solid gray;"></canvas> <br/> <hr/>
+
+  <label>Drawing canvas:</label>
+  <canvas id="canvas" width="28" height="28" style="border: 1px solid gray; width: 200px"></canvas>
+  &nbsp;
+  <label id="digit" style="font-size: 10em; vertical-align: text-bottom;"></label>
+  <label id="confidence" style="font-size: 2em; vertical-align: text-bottom;"></label>
+  <button onclick="clearCanvas()">Clear</button>
+  
+
+  <script>
+    var nn = new NN();
+
+    registerOnDrawn(() => 
+    {
+        var sample = canvasToMNIST("canvas");
+        var a = nn.predict(sample).last();
+        var [maxIdx, conf] = a.maxIndex();
+
+        document.getElementById("digit").innerHTML = String(maxIdx);
+        document.getElementById("confidence").innerHTML = String(Math.round(conf * 100)) + "%";
+    });
+    
+    function createNN()
+    {
+        var nn = new NN();
+        nn.add(new DenseLayer(28 * 28,  256, 'relu'));
+	      nn.add(new DenseLayer(256,      128, 'relu'));
+        nn.add(new DenseLayer(128,       10, 'softmax'));
+        return nn;
+    }
+
+    function train(nn, trainImages, trainLabels, testImages, testLabels)
+    {
+	      for (let epoch = 0; epoch < 5; epoch++)
+        {
+            console.log("-------- Epoch: " + epoch + " --------------");
+            nn.fitEpoch(trainImages, trainLabels, 32, 3);
+            testAccuracy(nn, testImages, testLabels);
+        }
+
+	      nn.save();
+    }
+
+    function showPredictions(nn, testImages, testLabels)
+    {
+        const DIGIT_COUNT = 48;
+        var predictedLabels = []
+
+        for (var i = 0; i < DIGIT_COUNT; i++)
+        {
+            var a = nn.predict(testImages[i]).last();
+            var [label, _] = a.maxIndex();
+            predictedLabels.push(label);
+        }
+
+        showPredictionsMNIST(testImages.slice(0, DIGIT_COUNT), 
+                             predictedLabels, 
+                             testLabels.slice(0, DIGIT_COUNT), 
+                             document.getElementById("sampleNumbers"));
+    }
+
+    //main
+    (async function()
+    {
+        var [trainImages, trainLabels, testImages, testLabels] = await fetchMNIST();
+        //trainImages = trainImages.slice(0, 10000); trainLabels = trainLabels.slice(0, 10000);
+    
+        /*nn = createNN();*/ nn = await NN.load('../data/nn.json');
+        //train(nn, trainImages, trainLabels, testImages, testLabels);
+
+        showPredictions(nn, testImages, testLabels);
+        //testAccuracy(nn, testImages, testLabels);
+    })();   
+  </script>
+</body>
+
+</html>

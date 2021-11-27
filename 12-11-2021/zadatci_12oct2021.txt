@@ -1,0 +1,182 @@
+1. Kreirajte dvije brojčane varijable te ispišite rezultat operatora usporedbe (usporedba jednakosti, nejednakosti, strogo veće, strogo manje, veće ili jednako, manje ili jednako). 
+
+2  Kreirajte dvije varijable i dodijelite im vrijednosti True ili False. Ispišite rezultate logičkih operatora (and, or, not) za dvije prethodno kreirane varijable.
+
+
+4. Napišite program koji će u varijable a i b spremiti dva dvoznamenkasta broja. U varijablu a pohranite zadnju znamenku broja koji se nalazi u varijabli b, a u varijablu b pohranite zadnju znamenku broja koja se nalazi u varijabli a. Ispišite sadržaj varijabli a i b.
+
+
+5. Omogućite unos 8 racionalnih brojeva te ispišite rezultat po sljedećoj formuli: 
+a + b / c * d**e // f - g % h 
+- komentarima ispišite što se sve događa kroz nekoliko slučajeva upisanih različitih brojeva
+
+
+6. Unesi jedan nasumični broj. 
+Ispiši aritmetičku sredinu onoliko brojeva(0-101) koliko je iznosio uneseni nasumični broj.
+Navedeni broj uzmi kao vrijednost opsega kruga te ispiši vrijednost polumjera navedenog kruga.
+
+
+7. Ispiši vrijednost broja Pi na 4 decimalna mjesta, kvadriraj taj broj te ga podijeli s racionalnim brojem odabranim od strane korisnika (input funkcija) i ispiši rezultat.
+
+
+8 Unesi neki nasumični broj kojeg ćeš uzeti kao vrijednost duljine liste u koju se trebaju spremiti vrijednosti od 0 do 1001. 
+	Ispiši sljedeće vrijednosti na ekran:
+		a) medijan
+		b) mod
+		c) aritmetičku vrijednost
+		d) sve brojeve koji se u definiranoj listi nalaze ispred vrijednosti koju smo izračunali kao medijan navedene liste
+		e) sve brojeve koji su manji od vrijednosti koju smo izračunali kao medijan navedene liste 
+
+	*Bonus: Napravite novu listu koja sadrži samo vrijednosti koje su za 10% veće ili manje od aritmetičke sredine
+
+
+9. Napišite algoritam koji prima nasumičan pozitivni broj manji od 86400 te pretvara taj broj iz sekunda i ispisuje koliko je to točno vrijeme u satima, minutama i sekundama
+
+10. Napišite algoritam koji uzima broj nasumične dužine te ispisuje:
+a) svaku drugu znamenku s tri decimalna mjesta (0,000) 
+b) zaokružen zbroj svih upravo ispisanih znamenki
+
+
+11. U varijablu upišite neki proizvoljni niz znakova. Nad varijablom pozovite odgovarajuću funkciju koja će vratiti duljinu upisanoga niza znakova te rezultat spremite u novu varijablu. Ispišite sve znakove do polovice niza. 
+Primjer: ako imamo niz od 15 znakova (abcdefghijklmno), potrebno je ispisati 1., 2., 3., 4., 5., 6., 7. i 8. znak (abcdefgh)
+
+
+12. Nađite sva ponavljanja ‘stol’ u zadanom stringu zanemarujući velika i mala slova: „U kuhinji je stol. STOL je novi.”
+
+
+13. Spremite sljedeći niz znakova u varijablu: "Testiramo što sve možemo napraviti sa stringovima". Iz niza znakova u prethodnom zadatku dohvatite i ispišite: 
+a) cijeli niz
+b) riječ "string", 
+c) koji je to tip podatka,
+d) koje je početno slovo te riječi koristeći indekse
+e) koje je posljednje slovo te riječi koristeći metode za stringove
+f) koliko znakova ta riječ ima 
+
+
+14. Kreirajte varijablu te u nju spremite nasumični niz znakova. 
+Na ekran s jednom print naredbom ispišite sljedeće: 
+a) “prva riječ u nizu ima sva velika slova bez obzira na uneseni niz: <RIJEČ>” 
+b) “druga riječ u nizu ima <XY> znakova”
+c) “ne postoje bjeline iza unesenog niza znakova: <niz znakova>” 
+d) “ne postoje bjeline prije unesenog niza znakova: <niz znakova>” 
+e) “svi znakovi su ispisani malim slovom: <niz znakova>”, 
+f) “samo prvo slovo cijelog niza je ispisano velikim slovom te je iza unesenog niza dodan niz “ asdfčlkasdfčlk” odmah nakon zadnjeg alfanumeričkog znaka: <niz znakova + ostatak>”
+
+
+15. Omogućite unos niza znakova te ispišite sljedeće:
+	a) svaka neparna riječ (osim prve) iz niza mora biti ispisana malim znakovima po redu kako su bili unešeni
+	b) svaka parna riječ (osim posljednje parne) iz niza mora biti ispisana velikim znakovima, obrnutim redom od onog kako je bila unešena
+
+
+16. Unesite dva proizvoljna niza znakova te ih spremite u dvije varijable. Prvi niz znakova mora imati više unesenih riječi od drugog niza znakova.
+Od vrijednosti te dvije varijable napravite dvije liste te kreirajte konačni rječnik gdje će vrijednosti iz druge liste biti ključevi, a vrijednosti iz prve liste postati vrijednosti koje se pozivom ključa ispisuju.
+
+
+17. Unesite tri proizvoljna niza znakova te ih spremite u tri varijable. 
+Ispišite na ekran znakove (characters) koji su zajednički svim unesenim vrijednostima
+
+
+18. Dobivate tuple sljedeće strukture: t = ("Jaje", [10, 20, 30], (5, 50, 500))
+Napišite funkciju koja će printati vrijednost 20 iz tog tuplea. 
+
+
+19. Omogućite unos dviju vrijednosti u dva navrata korisniku.
+Svaki par vrijednosti zapišite u jedan tuple.
+Zamijenite vrijednosti ovih dvaju tupleova te ispišite rezultat. 
+
+
+20. Omogućite korisniku unos dviju vrijednosti n puta korisniku. 
+Sortirajte sve unose koristeći druge vrijednosti iz svakog unosa.
+
+
+21. Napišite funkciju koja prima isključivo stringove i vraća tuple pojedinačnih charactera, uključujući i razmake. 
+
+
+22. Napravite funkciju koja prima brojeve i vraća redom:
+	a) umnožak tih brojeva
+	b) zbroj tih brojeva 
+	c) poredak po veličini (descending)
+	d) tuple prostih brojeva koji su unešeni
+	e) tuple parnih brojeva koji su unešeni
+	*uzmite rezultate te funkcije te ih zapišite u file def_rez.txt
+
+
+23. Napiši funkciju koja će za neki input broj vratiti nested listu s dužinama sub-lista koje se povećavaju za 1.
+	Rezultat bi trebao izgledati ovako: 
+		pyramid(0) => [ ]
+		pyramid(1) => [ [1] ]
+		pyramid(2) => [ [1], [1, 1] ]
+		pyramid(3) => [ [1], [1, 1], [1, 1, 1] ]
+		pyramid(4) => ...
+
+
+
+24. Automat s čokoladicama prima bilo koji iznos u kunama i vraća kovanice u sljedećim oblicima:
+	1 lipa
+	2 lipe
+	5 lipa
+	10 lipa
+	20 lipa
+	50 lipa
+	1 kuna
+	2 kune
+	5 kuna
+Potrebno je napisati funkciju koju će koristiti navedeni automat s čokoladicama kako bi vratio ostatak novca korisniku. 
+Pretpostavka je da automat uvijek vraća najmanji mogući broj kovanica.
+Funkcija prima 2 parametra - količinu novca kojeg je korisnik ubacio i cijenu proizvoda
+Funkcija vraća listu brojeva. Svaki od tih brojeva predstavlja količinu jedne vrste kovanice.
+
+Primjer: getChange(20, 3.99) -> [1, 0, 0, 0, 0, 0, 1, 0, 3]  ((1lp, 2lp, 5lp, 10lp, 20lp, 50lp, 1kn, 2kn, 5kn))
+
+Testiranje:
+get_change(3.14, 1.99) -> [0, 0, 1, 1, 0, 0, 1, 0, 0] 
+get_change(4, 3.14) -> [1, 0, 0, 0, 0, 0, 1, 0, 3] 
+get_change(0.45, 0.34) -> [1, 0, 0, 0, 0, 0, 1, 0, 3] 
+
+
+
+ 
+25. Potrebno je napraviti algoritam koji prima string liste s tri objekta. Navedeni objekti su zapravo rječnici(dictionaries) s 2 key-value para - gdje su “name” i “price” ključevi. Nazovite navedeni string json_string
+
+	Primjer: '[{"name":"eggs","price":1},{"name":"coffee","price":9.99},{"name":"rice","price":4.04}]'
+
+	Navedeni algoritam mora riješiti sljedeće zadatke: 
+		-->sortirati elemente liste po “price” ključu tako da ide od najmanje do najveće vrijednosti koja se nalazi pod “price”
+		-->ukoliko su cijene dvaju proizvoda iste, onda mora sortirati ta dva proizvoda po abecedi unazad.
+		-->Mora biti reproducibilan, tj. taj algoritam morate importati u drugoj skripti pod nazivom main.py 
+
+	Testiranje: 
+		'[{"name":"pivo","price":7.99},{"name":"vino","price":35.99},{"name":"rakija","price":50}]'
+		'[{"name":"paprika","price":11.99},{"name":"jaja","price":11.99},{"name":"kobasice","price":18.04}]'
+		'[{"name":"sir","price":35.14},{"name":"slanina","price":40.54},{"name":"rajčica","price":9.99}]'
+
+
+26. Podaci o pacijentima 
+	Bolnica ima velikih problema sa svojim podacima o pacijentima. Trenutna struktura im nije optimalna te traže bolje rješenje. 
+	Trenutno imaju podijeljene podatke o datumu rođenja, boji kose i boji očiju, a žele imati sve zajedno.
+	Vaš zadatak je pomoći im funkcijom koja uzima podijeljene podatke i vraća nazad objekt koji sadrži neku vrstu ključa pod nazivom “Pacijent” i sve podatke koje o tom pacijentu imaju. 
+	*Bonus task: bolnica želi biti u mogućnosti nekada u budućnosti dodati nove vrijednosti pod ključ “Pacijent” - pokušajte im to omogućiti
+
+		Primjer trenutnog zapisa: 
+		PersonalDetails = namedtuple('PersonalDetails', ['date_of_birth'])
+		personal_details = PersonalDetails(date_of_birth = '06-04-1972')
+		Complexion = namedtuple('Complexion', ['eye_color', 'hair_color'])
+		complexion = Complexion(eye_color = 'Blue', hair_color = 'Black')
+
+
+27. Na linku https://drive.google.com/drive/folders/1lONK6fv_6zxJO8uIxDcLBpDHVnCJDFpW se nalazi nekoliko tekstualnih fileova. Skinite ih i kopirajte te dokumente u folder gdje se nalazi skripta za rješavanje zadatka. 
+	Vaš zadatak je učitati sve dokumente iz tog foldera te izvući sljedeće podatke:
+		sve mailove
+		sve brojeve telefona 
+		sva imena i prezimena
+		sve opise (ostale podatke) 
+
+	Kreirajte novi folder kroz .py skriptu te unutar toga foldera kreirajte nove .txt dokumente na sljedeći način: 
+		Svaki dokument mora imati naziv u sljedećem formatu: “<varijabla>.txt”
+		Sadržaj dokumenata mora biti: 
+			jedan dokument samo s imenima
+			Jedan dokument samo s brojem godina
+			itd dok ne potrošite sve varijable
+			
+	Napravite csv file pod nazivom “Tinder” od tih podataka 
+
